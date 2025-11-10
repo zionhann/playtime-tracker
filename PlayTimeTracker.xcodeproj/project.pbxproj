@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FD5E93862EC1B9C10027429D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5E936E2EC1B9BF0027429D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5E93752EC1B9BF0027429D;
+			remoteInfo = PlayTimeTracker;
+		};
+		FD5E93902EC1B9C10027429D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5E936E2EC1B9BF0027429D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5E93752EC1B9BF0027429D;
+			remoteInfo = PlayTimeTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD5E93762EC1B9BF0027429D /* PlayTimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayTimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5E93852EC1B9C10027429D /* PlayTimeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayTimeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5E938F2EC1B9C10027429D /* PlayTimeTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayTimeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FD5E93782EC1B9BF0027429D /* PlayTimeTracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PlayTimeTracker;
+			sourceTree = "<group>";
+		};
+		FD5E93882EC1B9C10027429D /* PlayTimeTrackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PlayTimeTrackerTests;
+			sourceTree = "<group>";
+		};
+		FD5E93922EC1B9C10027429D /* PlayTimeTrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PlayTimeTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD5E93732EC1B9BF0027429D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5E93822EC1B9C10027429D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5E938C2EC1B9C10027429D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD5E936D2EC1B9BF0027429D = {
+			isa = PBXGroup;
+			children = (
+				FD5E93782EC1B9BF0027429D /* PlayTimeTracker */,
+				FD5E93882EC1B9C10027429D /* PlayTimeTrackerTests */,
+				FD5E93922EC1B9C10027429D /* PlayTimeTrackerUITests */,
+				FD5E93772EC1B9BF0027429D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD5E93772EC1B9BF0027429D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD5E93762EC1B9BF0027429D /* PlayTimeTracker.app */,
+				FD5E93852EC1B9C10027429D /* PlayTimeTrackerTests.xctest */,
+				FD5E938F2EC1B9C10027429D /* PlayTimeTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD5E93752EC1B9BF0027429D /* PlayTimeTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5E93992EC1B9C10027429D /* Build configuration list for PBXNativeTarget "PlayTimeTracker" */;
+			buildPhases = (
+				FD5E93722EC1B9BF0027429D /* Sources */,
+				FD5E93732EC1B9BF0027429D /* Frameworks */,
+				FD5E93742EC1B9BF0027429D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FD5E93782EC1B9BF0027429D /* PlayTimeTracker */,
+			);
+			name = PlayTimeTracker;
+			packageProductDependencies = (
+			);
+			productName = PlayTimeTracker;
+			productReference = FD5E93762EC1B9BF0027429D /* PlayTimeTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD5E93842EC1B9C10027429D /* PlayTimeTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5E939C2EC1B9C10027429D /* Build configuration list for PBXNativeTarget "PlayTimeTrackerTests" */;
+			buildPhases = (
+				FD5E93812EC1B9C10027429D /* Sources */,
+				FD5E93822EC1B9C10027429D /* Frameworks */,
+				FD5E93832EC1B9C10027429D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5E93872EC1B9C10027429D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FD5E93882EC1B9C10027429D /* PlayTimeTrackerTests */,
+			);
+			name = PlayTimeTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = PlayTimeTrackerTests;
+			productReference = FD5E93852EC1B9C10027429D /* PlayTimeTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD5E938E2EC1B9C10027429D /* PlayTimeTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5E939F2EC1B9C10027429D /* Build configuration list for PBXNativeTarget "PlayTimeTrackerUITests" */;
+			buildPhases = (
+				FD5E938B2EC1B9C10027429D /* Sources */,
+				FD5E938C2EC1B9C10027429D /* Frameworks */,
+				FD5E938D2EC1B9C10027429D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5E93912EC1B9C10027429D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FD5E93922EC1B9C10027429D /* PlayTimeTrackerUITests */,
+			);
+			name = PlayTimeTrackerUITests;
+			packageProductDependencies = (
+			);
+			productName = PlayTimeTrackerUITests;
+			productReference = FD5E938F2EC1B9C10027429D /* PlayTimeTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD5E936E2EC1B9BF0027429D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					FD5E93752EC1B9BF0027429D = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					FD5E93842EC1B9C10027429D = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = FD5E93752EC1B9BF0027429D;
+					};
+					FD5E938E2EC1B9C10027429D = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = FD5E93752EC1B9BF0027429D;
+					};
+				};
+			};
+			buildConfigurationList = FD5E93712EC1B9BF0027429D /* Build configuration list for PBXProject "PlayTimeTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD5E936D2EC1B9BF0027429D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FD5E93772EC1B9BF0027429D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD5E93752EC1B9BF0027429D /* PlayTimeTracker */,
+				FD5E93842EC1B9C10027429D /* PlayTimeTrackerTests */,
+				FD5E938E2EC1B9C10027429D /* PlayTimeTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD5E93742EC1B9BF0027429D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5E93832EC1B9C10027429D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5E938D2EC1B9C10027429D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD5E93722EC1B9BF0027429D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5E93812EC1B9C10027429D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5E938B2EC1B9C10027429D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD5E93872EC1B9C10027429D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5E93752EC1B9BF0027429D /* PlayTimeTracker */;
+			targetProxy = FD5E93862EC1B9C10027429D /* PBXContainerItemProxy */;
+		};
+		FD5E93912EC1B9C10027429D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5E93752EC1B9BF0027429D /* PlayTimeTracker */;
+			targetProxy = FD5E93902EC1B9C10027429D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD5E93972EC1B9C10027429D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD5E93982EC1B9C10027429D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FD5E939A2EC1B9C10027429D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prototype.PlayTimeTracker.PlayTimeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FD5E939B2EC1B9C10027429D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prototype.PlayTimeTracker.PlayTimeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FD5E939D2EC1B9C10027429D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prototype.PlayTimeTracker.PlayTimeTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayTimeTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlayTimeTracker";
+			};
+			name = Debug;
+		};
+		FD5E939E2EC1B9C10027429D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prototype.PlayTimeTracker.PlayTimeTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayTimeTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlayTimeTracker";
+			};
+			name = Release;
+		};
+		FD5E93A02EC1B9C10027429D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prototype.PlayTimeTracker.PlayTimeTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PlayTimeTracker;
+			};
+			name = Debug;
+		};
+		FD5E93A12EC1B9C10027429D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prototype.PlayTimeTracker.PlayTimeTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PlayTimeTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD5E93712EC1B9BF0027429D /* Build configuration list for PBXProject "PlayTimeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5E93972EC1B9C10027429D /* Debug */,
+				FD5E93982EC1B9C10027429D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5E93992EC1B9C10027429D /* Build configuration list for PBXNativeTarget "PlayTimeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5E939A2EC1B9C10027429D /* Debug */,
+				FD5E939B2EC1B9C10027429D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5E939C2EC1B9C10027429D /* Build configuration list for PBXNativeTarget "PlayTimeTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5E939D2EC1B9C10027429D /* Debug */,
+				FD5E939E2EC1B9C10027429D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5E939F2EC1B9C10027429D /* Build configuration list for PBXNativeTarget "PlayTimeTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5E93A02EC1B9C10027429D /* Debug */,
+				FD5E93A12EC1B9C10027429D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD5E936E2EC1B9BF0027429D /* Project object */;
+}

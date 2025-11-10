@@ -46,12 +46,11 @@ class PlayTimeManager: ObservableObject {
         isTracking = true
         startTime = Date()
 
-        // Update every second
+        // Update every second on the main runloop
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
-            Task { @MainActor in
-                self?.elapsedSeconds += 1
-            }
+            self?.elapsedSeconds += 1
         }
+        RunLoop.main.add(timer!, forMode: .common)
     }
 
     func stopTracking() {

@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var playTimeManager = PlayTimeManager()
+    @EnvironmentObject private var appCoordinator: AppCoordinator
     @StateObject private var userSettings = UserSettings()
     @StateObject private var notificationManager = NotificationManager.shared
 
     @State private var lastNotificationMinutes: Int = 0
+
+    private var playTimeManager: PlayTimeManager {
+        appCoordinator.playTimeManager
+    }
 
     var body: some View {
         VStack(spacing: 30) {
@@ -151,4 +155,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(AppCoordinator())
 }

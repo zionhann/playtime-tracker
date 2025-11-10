@@ -14,10 +14,6 @@ struct ContentView: View {
 
     @State private var lastNotificationMinutes: Int = 0
 
-    private var playTimeManager: PlayTimeManager {
-        appCoordinator.playTimeManager
-    }
-
     var body: some View {
         VStack(spacing: 30) {
             // Header
@@ -31,7 +27,7 @@ struct ContentView: View {
                     .font(.system(size: 60))
                     .foregroundStyle(.blue)
 
-                Text(playTimeManager.formattedTime)
+                Text(appCoordinator.playTimeManager.formattedTime)
                     .font(.system(size: 48, weight: .bold, design: .monospaced))
                     .foregroundStyle(
                         LinearGradient(
@@ -86,9 +82,9 @@ struct ContentView: View {
                 // Status indicator
                 HStack {
                     Circle()
-                        .fill(playTimeManager.isTracking ? Color.green : Color.red)
+                        .fill(appCoordinator.playTimeManager.isTracking ? Color.green : Color.red)
                         .frame(width: 8, height: 8)
-                    Text(playTimeManager.isTracking ? "Tracking Active" : "Tracking Paused")
+                    Text(appCoordinator.playTimeManager.isTracking ? "Tracking Active" : "Tracking Paused")
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
@@ -100,7 +96,7 @@ struct ContentView: View {
 
             // Reset Button
             Button(action: {
-                playTimeManager.resetTracking()
+                appCoordinator.playTimeManager.resetTracking()
                 lastNotificationMinutes = 0
             }) {
                 Label("Reset Playtime", systemImage: "arrow.counterclockwise")
@@ -129,7 +125,7 @@ struct ContentView: View {
         }
         .padding()
         .frame(minWidth: 500, minHeight: 600)
-        .onChange(of: playTimeManager.elapsedSeconds) { _, newValue in
+        .onChange(of: appCoordinator.playTimeManager.elapsedSeconds) { _, newValue in
             checkForNotification(seconds: newValue)
         }
         .task {
@@ -148,7 +144,7 @@ struct ContentView: View {
         // Check if we've crossed an interval threshold
         if currentMinutes > 0 && currentMinutes % intervalMinutes == 0 && currentMinutes != lastNotificationMinutes {
             lastNotificationMinutes = currentMinutes
-            notificationManager.sendPlaytimeNotification(message: playTimeManager.notificationMessage)
+            notificationManager.sendPlaytimeNotification(message: appCoordinator.playTimeManager.notificationMessage)
         }
     }
 }

@@ -6,27 +6,45 @@
 //
 
 import SwiftUI
-import SwiftData
 
 @main
 struct PlayTimeTrackerApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    @StateObject private var appCoordinator = AppCoordinator()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appCoordinator)
         }
-        .modelContainer(sharedModelContainer)
+        .windowStyle(.hiddenTitleBar)
+        .windowResizability(.contentSize)
+    }
+}
+
+@MainActor
+class AppCoordinator: ObservableObject {
+    private var systemEventMonitor: SystemEventMonitor?
+    @Published var playTimeManager = PlayTimeManager()
+
+    init() {
+        setupSystemEventMonitoring()
+    }
+
+    private func setupSystemEventMonitoring() {
+        systemEventMonitor = SystemEventMonitor()
+
+        // Reset playtime when system goes to sleep
+        systemEventMonitor?.onSleep = { [weak self] in
+            Task { @MainActor in
+                self?.playTimeManager.resetTracking()
+            }
+        }
+
+        // Resume tracking when system wakes up
+        systemEventMonitor?.onWake = { [weak self] in
+            Task { @MainActor in
+                self?.playTimeManager.startTracking()
+            }
+        }
     }
 }

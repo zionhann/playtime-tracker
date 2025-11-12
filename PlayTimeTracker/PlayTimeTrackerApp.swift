@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 @main
 struct PlayTimeTrackerApp: App {
@@ -25,9 +26,16 @@ struct PlayTimeTrackerApp: App {
 class AppCoordinator: ObservableObject {
     private var systemEventMonitor: SystemEventMonitor?
     @Published var playTimeManager = PlayTimeManager()
+    private var cancellables = Set<AnyCancellable>()
 
     init() {
         setupSystemEventMonitoring()
+
+        // Forward PlayTimeManager changes to AppCoordinator's objectWillChange
+        playTimeManager.objectWillChange.sink { [weak self] _ in
+            self?.objectWillChange.send()
+        }
+        .store(in: &cancellables)
     }
 
     private func setupSystemEventMonitoring() {

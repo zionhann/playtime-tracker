@@ -8,9 +8,18 @@
 import Foundation
 import SwiftUI
 
+@MainActor
 class UserSettings: ObservableObject {
-    @AppStorage("notificationInterval") var notificationInterval: Int = 30 // Default: 30 minutes
-    @AppStorage("notificationsEnabled") var notificationsEnabled: Bool = true
+    @AppStorage("notificationInterval") var notificationInterval: Int = 30 { // Default: 30 minutes
+        willSet {
+            objectWillChange.send()
+        }
+    }
+    @AppStorage("notificationsEnabled") var notificationsEnabled: Bool = true {
+        willSet {
+            objectWillChange.send()
+        }
+    }
 
     // Available notification intervals (in minutes)
     let availableIntervals: [Int] = [15, 30, 60, 90, 120]

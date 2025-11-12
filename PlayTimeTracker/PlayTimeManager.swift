@@ -13,7 +13,7 @@ class PlayTimeManager: ObservableObject {
     @Published var elapsedSeconds: Int = 0
     @Published var isTracking: Bool = false
 
-    private var timer: Timer?
+    private nonisolated(unsafe) var timer: Timer?
     private var startTime: Date?
 
     // Computed property to format time as HH:MM:SS
@@ -65,7 +65,8 @@ class PlayTimeManager: ObservableObject {
         startTracking()
     }
 
-    deinit {
-        stopTracking()
+    nonisolated deinit {
+        // Can't call @MainActor methods in deinit, so manually invalidate timer
+        timer?.invalidate()
     }
 }
